@@ -1,0 +1,6 @@
+{"frames":[
+{"filename":"logo","frame":{"x":1,"y":1,"w":503,"h":218}},
+{"filename":"play_big_button","frame":{"x":1,"y":289,"w":191,"h":195}},
+{"filename":"play_big_button_pushed","frame":{"x":193,"y":289,"w":169,"h":172}},
+{"filename":"loading","frame":{"x":1,"y":220,"w":476,"h":41}},
+{"filename":"loading-bar","frame":{"x":1,"y":262,"w":456,"h":26}}]}

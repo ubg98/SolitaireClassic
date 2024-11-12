@@ -1,0 +1,229 @@
+{
+	"features": {
+		"highscores": 1,
+		"credits": 0,
+		"leaderboard": 0,
+		"multiplayer": 0,
+		"rewarded": 1,
+		"standalone": 1,
+		"multiplayer_local": 0
+	},
+	"game_info": {
+		"client_version": "1.0",
+		"api_version": "2.1",
+		"forced_mode": {
+			"state": {
+				"is_3_card": {
+					"description": "3 cards will be revealed if deck is clicked",
+					"type": "boolean"
+				}
+			},
+			"override": {
+				"hide_ui": {
+					"description": "Hide specific Ui Elements",
+					"type": "array",
+					"values": ["score", "time", "turns"]
+				},
+				"disable_reverse": {
+					"description": "Disables the reverse button",
+					"type": "boolean"
+				},
+				"show_cards": {
+					"description": "Reveals all cards on the board",
+					"type": "boolean"
+				},
+				"disable_auto_play": {
+					"description": "Disables the automatch function if a matchable card is doubleclicked",
+					"type": "boolean"
+				},
+				"disable_score_over_time": {
+					"description": "Disables score loss over time",
+					"type": "boolean"
+				},
+				"score_loss_amount": {
+					"description": "Modifies the amount of score lost",
+					"type": "number",
+					"min": 0
+				},
+				"score_loss_delay": {
+					"description": "Delays the score loss over time by x seconds",
+					"type": "number",
+					"min": 0
+				},
+				"score_multiplier": {
+					"description": "Modifies the amount of score gained",
+					"type": "number",
+					"min": 0
+				}
+			}
+		},
+		"track_stats": {
+			"card_moved": {
+				"description": "A card has been moved on the board",
+				"params": {
+					"card_value": {
+						"type": "string",
+						"values": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "a", "j", "q", "k"]
+					},
+					"card_type": {
+						"type": "string",
+						"values": ["s", "d", "c", "h"]
+					}
+				}
+			},
+			"deck_clicked": {
+				"description": "The deck has been clicked"
+			},
+			"revert_clicked": {
+				"description": "The revert button has been clicked"
+			}
+		}
+	},
+	"game_i18n": {
+		"default": {
+			"statistics": "Statistics",
+			"card1": "1 Card",
+			"card3": "3 Cards",
+			"games_won": "Games Won",
+			"games_played": "Games Played",
+			"best_score": "Best Score",
+			"least_moves": "Least Moves",
+			"best_time": "Best Time",
+			"total_time": "Total Time",
+			"restart_warning": "Game will restart!",
+			"tutorial1": "Move cards to the four top foundations, starting with Aces. To unlock other cards, sort existing cards in descending order alternating colors.",
+			"tutorial1_fontsize": "28",
+			"tutorial2": "The game's objective is to sort all cards onto the foundation piles by suit and rank in ascending order from Ace to King. There are two game modes: Draw 1 or 3 cards."
+		},
+		"de": {
+			"statistics": "Statistik",
+			"card1": "1 Karte",
+			"card3": "3 Karten",
+			"games_won": "Gewonnen",
+			"games_played": "Spiele insgesamt",
+			"best_score": "Highscore",
+			"least_moves": "Beste Züge",
+			"best_time": "Beste Zeit",
+			"total_time": "Gesamtzeit",
+			"restart_warning": "Spiel wird neu gestartet!",
+			"tutorial1": "Lege die Karten auf die vier Zielstapel ab, beginne mit dem Ass. Karten können in den Reihen unten in absteigender Reihenfolge sortiert werden, rote und schwarze Karten müssen sich dabei abwechseln.",
+			"tutorial1_fontsize": "25",
+			"tutorial2": "Ziel des Spiel ist es vier Zielstapel in je einer Farbe und aufsteigender Reihenfolge von Ass bis König zu bilden. Es gibt zwei Spielmodi: Ziehe 1 oder 3 Karten."
+		},
+		"tr": {
+			"statistics": "İstatistik",
+			"card1": "1 Kart",
+			"card3": "3 Kart",
+			"games_won": "Kazanılan",
+			"games_played": "Toplam oynama",
+			"best_score": "Rekor",
+			"least_moves": "En iyi hamle",
+			"best_time": "En iyi süre",
+			"total_time": "Toplam süre",
+			"restart_warning": "Oyun yeniden başlatılıyor!",
+			"tutorial1": "As ile başlayarak yukarıdaki 4 yere tüm kartları sırala. Alt tarafta kartlar büyükten küçüğe sıralana bilir fakat aynı renk üstüste gelemez.",
+			"tutorial2": "Oyundaki hedef tüm kartları ayrılmış 4 yerde renklerine göre As'tan başlayarak sıralamak. 2 Oyun Modu bulunmakta: 1 Kart çekme yada 3 Kart çekme."
+		},
+		"fr": {
+			"statistics": "Statistiques",
+			"card1": "1 carte",
+			"card3": "3 cartes",
+			"games_won": "Parties gagnées",
+			"games_played": "Parties jouées",
+			"best_score": "Meilleur score",
+			"least_moves": "Le moins de déplacements",
+			"best_time": "Meilleur temps",
+			"total_time": "Temps total",
+			"restart_warning": "Le jeu va redémarrer!",
+			"tutorial1": "Déplacez les cartes vers les quatre fondations du haut, en commençant par les as. Pour débloquer d'autres cartes, triez les cartes existantes dans l'ordre décroissant en alternant les couleurs.",
+			"tutorial2": "L'objectif du jeu est de trier toutes les cartes dans les piles des fondations par couleur et hiérarchie dans l'ordre croissant de l'as au roi. Il y a deux modes de jeu: Tirer 1 à 3 cartes."
+		},
+		"pl": {
+			"statistics": "Statystyki",
+			"card1": "1 karta",
+			"card3": "3 karty",
+			"games_won": "Wygrane",
+			"games_played": "Liczba gier",
+			"best_score": "Najlepszy wynik",
+			"least_moves": "Najmniej ruchów",
+			"best_time": "Najlepszy czas",
+			"total_time": "Łączny czas",
+			"restart_warning": "Gra uruchomi się ponownie!",
+			"tutorial1": "Przenoś karty na cztery bazy zaczynając od asów. Aby odblokować kolejne kart, uporządkuj obecne karty od najwyższej do najniższej, kolorami na przemian.",
+			"tutorial2": "Celem gry jest ułożenie wszystkich kart na stosach bazowych według koloru i wartości rosnąco od asa do króla. Do wyboru są dwa tryby gry: wykładanie 1 lub 3 karty."
+		},
+		"es": {
+			"statistics": "Estadísticas",
+			"card1": "1 carta",
+			"card3": "3 cartas",
+			"games_won": "Partidas ganadas",
+			"games_played": "Partidas jugadas",
+			"best_score": "Mejor puntaje",
+			"least_moves": "Menos movimientos",
+			"best_time": "Mejor tiempo",
+			"total_time": "Tiempo total",
+			"restart_warning": "¡El juego se reiniciará!",
+			"tutorial1": "Mueve las cartas a las cuatro bases superiores, empezando con los ases. Para desbloquear otras cartas, ordena las cartas existentes de forma descendente con los colores alternados.",
+			"tutorial2": "El objetivo del juego es ordenar todas las cartas sobre las pilas de las bases por palo y valor de forma ascendente de as a rey. Hay dos modos de juego: robar de a 1 carta o de a 3 cartas."
+		},
+		"pt": {
+			"statistics": "Estatísticas",
+			"card1": "1 carta",
+			"card3": "3 cartas",
+			"games_won": "Jogos ganhos",
+			"games_played": "Jogos jogados",
+			"best_score": "Melhor pontuação",
+			"least_moves": "Menos movimentos",
+			"best_time": "Melhor tempo",
+			"total_time": "Tempo total",
+			"restart_warning": "Jogo será reiniciado!",
+			"tutorial1": "Mover as cartas para os quatro fundamentos principais, começando com Ases.",
+			"tutorial2": "Para desbloquear outras cartas, ordene todas as cartas nas pilhas de fundamentos por naipe e em ordem crescente de ás a rei. Existem dois modos de jogo: Vire 1 ou 3 cartas."
+		},
+		"ru": {
+			"statistics": "Статистика",
+			"card1": "1 карта",
+			"card3": "3 карты",
+			"games_won": "Выигранных игр",
+			"games_played": "Сыгранных игр",
+			"best_score": "Лучший результат",
+			"least_moves": "Мин. к-во перемещений",
+			"best_time": "Лучшее время",
+			"total_time": "Всего времени",
+			"restart_warning": "Игра начнется сначала!",
+			"tutorial1": "Переместите карты в четыре дома, начиная с туза. Чтобы получить доступ к остальным картам, расположите открытые карты в ниспадающем порядке, чередуя масти.",
+			"tutorial2": "Цель игры — разложить все карты в четыре стопки по масти и возрастанию, от туза до короля. В игре предусмотрено два режима: 1 и 3 карты."
+		},
+		"nl": {
+			"statistics": "Statistieken",
+			"card1": "1 kaart",
+			"card3": "3 kaarten",
+			"games_won": "Gewonnen spellen",
+			"games_played": "Gespeelde spellen",
+			"best_score": "Beste score",
+			"least_moves": "Minste zetten",
+			"best_time": "Beste tijd",
+			"total_time": "Totale tijd",
+			"restart_warning": "Het spel zal herbeginnen!",
+			"tutorial1": "Verplaats de kaarten naar de vier basisstapels bovenaan, begin met de azen. Rangschik de aanwezige kaarten in aflopende volgorde met afwisselende kleuren om andere kaarten te ontgrendelen.",
+			"tutorial2": "Het doel van het spel is om alle kaarten te rangschikken op de basisstapels volgens soort en rang in oplopende volgorde van aas tot koning. Er zijn twee spelmodussen: 1 of 3 kaarten trekken."
+		}
+	},
+	"aid": "A-12345",
+	"logging": false,
+	"api": "famobi",
+	"name": "Azerion / Game Distribution",
+	"more_games_url": "",
+	"more_games_button_image": "logo",
+	"show_splash": "",
+	"splash_duration": 3000,
+	"branch": "develop",
+	"gameParams": {
+		"ad_type": "off"
+	},
+	"menuless": true,
+	"disable_console": false,
+	"includeJS": [],
+	"version": "e5c9c772",
+	"supportedLanguages": ["en", "de", "tr", "fr", "pl", "es", "pt", "ru", "nl"]
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Solitaire Classic Unblocked - ubg235 GameDistribution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+
+    <script src="azerion.js"></script>
+
+    <script>
+        window.onSDKReady = function() {
+            window.famobi_gameID = "solitaire-classic";
+            window.famobi_gameJS = [
+                "src/detect.min.js",
+                "src/phaser-no-physics.min.js",
+                "src/main.js",
+                "src/scene-transition.js",
+                "src/rgui.js",
+                "src/boot-state.js",
+                "src/load-state.js",
+                "src/home-state.js",
+                "src/statistics-state.js",
+                "src/play-state.js",
+                "src/clock.js",
+                "src/cards.js",
+                "src/deck.js",
+                "src/tutorial.js",
+                "src/forced-mode.js",
+                function(){
+
+                    window.famobi_onPauseRequested = function() {
+                        window.game.paused = true;
+                    };
+
+                    window.famobi_onResumeRequested = function() {
+                        window.game.paused = false;
+                    };
+
+                    window.famobi_onload();
+                }
+            ];
+
+            (function (document, url, fgJS, firstJS) {
+                    fgJS = document.createElement('script');
+                    firstJS = document.getElementsByTagName('script')[0];
+                    fgJS.src = url + encodeURIComponent(document.location.href);
+                    firstJS.parentNode.insertBefore(fgJS, firstJS);
+            })(document, 'html5games/gameapi/v1.js?e=');
+        };
+    </script>
+
+</head>
+<body style="overflow:hidden;">
+    <div id="canvas-wrapper">
+        <span id="gameContainer"></span>
+    </div>
+</body>
+</html>

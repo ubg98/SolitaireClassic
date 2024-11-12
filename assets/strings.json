@@ -1,0 +1,16 @@
+﻿{
+    "en": {
+        "statistics": "Statistics",
+        "card1": "1 Card",
+        "card3": "3 Cards",
+        "games_won": "Games Won",
+        "games_played": "Games Played",
+        "best_score": "Best Score",
+        "least_moves": "Least Moves",
+        "best_time": "Best Time",
+        "total_time": "Total Time",
+        "restart_warning": "Game will restart!",
+        "tutorial1": "Move cards to your top foundations, starting with Aces. To unlock other cards, move existing cards in descending order, alternating colors.",
+        "tutorial2": "Game objective is to get all the cards onto the Foundation piles by suit and rank in ascending order from ace to king. There are two modes of taking cards: 1 or 3 cards."
+    }
+}
